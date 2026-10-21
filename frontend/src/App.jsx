@@ -22,9 +22,9 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API = "http://localhost:5000/api/events";
-const REGISTRATION_API = "http://localhost:5000/api/registrations";
-const PRODUCTION_API = "http://localhost:5000/api/production";
+const API = "https://campus-event-management-system-4cnr.onrender.com/api/events";
+const REGISTRATION_API = "https://campus-event-management-system-4cnr.onrender.com/api/registrations";
+const PRODUCTION_API = "https://campus-event-management-system-4cnr.onrender.com/api/production";
 
 const emptyEventForm = {
   title: "",
@@ -125,7 +125,7 @@ const [memberForm, setMemberForm] = useState({
   try {
     setAiFallback(false);
     const response = await fetch(
-      "http://localhost:5000/api/ai/assistant",
+      "https://campus-event-management-system-4cnr.onrender.com/api/ai/assistant",
       {
         method: "POST",
         headers: {
